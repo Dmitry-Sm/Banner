@@ -37,7 +37,7 @@ const style_loader = {
         options: {
             plugins: [
                 autoprefixer({
-                    browsers:['ie >= 10', 'opera >= 15', 'chrome >= 18']
+                    browsers:['ie >= 9', 'opera >= 15', 'chrome >= 18']
                 })
             ],
             sourceMap: true
