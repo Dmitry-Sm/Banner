@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="ad.size" content="width=100%,height=100%">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Mobil</title>
+  </head>
+  <body>
+
+    <div class="banner">
+        <div class="background background-2">
+            <div class="background-2-2"></div>
+          </div>
+          <div class="background background-1">
+            <div class="background-1-2"></div>
+          </div>
+      
+          <div class="gradient-1"></div>
+          <div class="gradient-2"></div>
+      
+          <div class="text text-1"></div>
+          <div class="text text-2"></div>
+          <div class="text-final"></div>
+      
+          <div class="logo"></div>
+          <a href="%link1%" target="_blank" class="button"></a>
+      
+          <div class="kanister kanister-1"></div>
+          <div class="kanister kanister-2"></div>
+    </div>
+
+
+    <script>
+      (function() {
+          var lastTime = 0;
+          var vendors = ['ms', 'moz', 'webkit', 'o'];
+          for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+              window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+              window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] 
+                                         || window[vendors[x]+'CancelRequestAnimationFrame'];
+          }
+       
+          if (!window.requestAnimationFrame)
+              window.requestAnimationFrame = function(callback, element) {
+                  var currTime = new Date().getTime();
+                  var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+                  var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+                    timeToCall);
+                  lastTime = currTime + timeToCall;
+                  return id;
+              };
+       
+          if (!window.cancelAnimationFrame)
+              window.cancelAnimationFrame = function(id) {
+                  clearTimeout(id);
+              };
+      }());
+      </script>
+    <script src="./dist/build.js"></script>
+  </body>
+</html>

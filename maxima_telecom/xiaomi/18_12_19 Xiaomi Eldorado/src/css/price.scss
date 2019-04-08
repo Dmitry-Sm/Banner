@@ -1,0 +1,54 @@
+.price-block {
+  position: absolute;
+  right: 2%;
+
+  width: 30%;
+  height: 13%;
+  // border: 1px solid white;
+}
+@media (orientation: landscape) {
+  .price-block {
+    right: 10%;
+  }
+}
+
+
+.price-block-1 {
+  bottom: 55%;
+}
+
+.price-1 {
+  background: url('../assets/images/price_1.png') 50% 100% no-repeat;
+  background-size: contain;
+}
+
+.price-spec-1 {
+
+  background: url('../assets/images/price_spec_1.png') 50% 100% no-repeat;
+  background-size: contain;
+}
+
+.price-old-1 {
+  background: url('../assets/images/price_old_1.png') 50% 100% no-repeat;
+  background-size: contain;
+}
+
+.price-block-2 {
+  bottom: 35%;
+}
+
+.price-2 {
+  background: url('../assets/images/price_2.png') 50% 100% no-repeat;
+  background-size: contain;
+}
+
+.price-spec-2 {
+
+  background: url('../assets/images/price_spec_2.png') 50% 100% no-repeat;
+  background-size: contain;
+}
+
+.price-old-2 {
+  background: url('../assets/images/price_old_2.png') 50% 100% no-repeat;
+  background-size: contain;
+}
