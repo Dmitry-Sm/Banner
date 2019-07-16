@@ -1,0 +1,86 @@
+.banner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo {
+  position: absolute;
+  left: 10%;
+  top: 4%;
+  width: 80%;
+  height: 10%;
+
+  background: url('../assets/images/logo.png') 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.google {
+  position: absolute;
+  top: 25%;
+  right: 8%;
+  width: 30%;
+  height: 20%;
+  opacity: 0;
+
+  background: url('../assets/images/google.png') 70% 50% no-repeat;
+  background-size: contain;
+}
+
+.end {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  pointer-events: none;
+}
+.end-text {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 60%;
+  opacity: 0;
+  background: url('../assets/images/end.png') 50% 20% no-repeat;
+  background-size: contain;
+}
+
+.zoom {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  width: 20%;
+  // height: 10%;
+  padding-top: 20%;
+  z-index: 12;
+  border: 2px solid #ccc;
+  border-radius: 1000px;
+
+  background: url('../assets/images/phone-7.png') 20% 25% no-repeat;
+  background-size: 800% 800%;
+  opacity: 0;
+
+
+  @media (min-aspect-ratio: 3 / 4) {
+    left: 10%;
+  }
+  @media (min-aspect-ratio: 1 / 1) {
+    top: 25%;
+    width: 15%;
+    padding-top: 15%;
+    left: 15%;
+  }
+  @media (min-aspect-ratio: 5 / 3) {
+    left: 25%;
+    width: 10%;
+    padding-top: 10%;
+  }
+  @media (min-aspect-ratio: 2 / 1) {
+    left: 30%;
+  }
+}
