@@ -1,0 +1,196 @@
+
+.viruses {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 250px;
+  // opacity: 0;
+}
+
+.virus {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: pulse 2s linear 0s infinite;
+    background: radial-gradient(circle, rgba(20, 20, 20, 0.2) 0%, rgba(20, 140, 120, 0.2) 40%, rgba(255,255,255,0) 60%);
+  }
+  &:after {
+    content: '';
+    background: url('../assets/img/virus.png') 50% 50% no-repeat;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    animation: pulse2 2s linear 0.5s infinite;
+  }
+}
+
+.virus-1 {
+  top: 40px;
+  right: 50px;
+}
+.virus-2 {
+  top: 130px;
+  right: 35%;
+  max-width: 35%;
+  transform: scale(1.4) rotate(40deg);
+  filter: blur(2px);
+}
+.virus-3 {
+  top: 10px;
+  right: 60%;
+  max-width: 35%;
+  transform: scale(1.8) rotate(-200deg);
+  filter: blur(3px);
+}
+
+
+
+.bacteries {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 250px;
+  // opacity: 0;
+}
+
+.bactery {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: pulse 2s linear 0s infinite;
+    background: radial-gradient(circle, rgba(20, 20, 20, 0.2) 0%, rgba(140, 70, 200, 0.3) 40%, rgba(255,255,255,0) 60%);
+  }
+  &:after {
+    content: '';
+    background: url('../assets/img/bactery.png') 50% 50% no-repeat;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    animation: pulse2 2s linear 0.5s infinite;
+  }
+
+}
+
+.bactery-1 {
+  top: 40px;
+  left: 50px;
+}
+.bactery-2 {
+  top: 130px;
+  left: 35%;
+  max-width: 25%;
+  transform: scale(1.4) rotate(110deg);
+  filter: blur(3px);
+}
+.bactery-3 {
+  top: 20px;
+  left: 60%;
+  max-width: 25%;
+  transform: scale(1.8) rotate(160deg);
+  filter: blur(4px);
+}
+
+@keyframes pulse {
+  0% {transform: scale(1)}
+  80% {transform: scale(1.6)}
+  100% {transform: scale(1)}
+}
+
+@keyframes pulse2 {
+  0% {transform: scale(1)}
+  80% {transform: scale(1.1)}
+  100% {transform: scale(1)}
+}
+
+.bactery-text-top {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  width: 80px;
+  height: 40px;
+  transform: translateX(-50%);
+  z-index: 100;
+
+  background: url('../assets/img/bac-text1.png') 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.bactery-text-bottom {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  width: 80px;
+  height: 40px;
+  transform: translateX(-50%);
+  z-index: 100;
+
+  background: url('../assets/img/bac-text2.png') 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.virus-text-top {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  width: 80px;
+  height: 40px;
+  transform: translateX(-50%);
+  z-index: 100;
+
+  background: url('../assets/img/vir-text1.png') 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.virus-text-bottom {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  width: 80px;
+  height: 40px;
+  transform: translateX(-50%);
+  z-index: 100;
+
+  background: url('../assets/img/vir-text2.png') 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.crossed {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  z-index: 100;
+  background: url('../assets/img/cross.png') 50% 50% no-repeat;
+  background-size: contain;
+  opacity: 0;
+}
