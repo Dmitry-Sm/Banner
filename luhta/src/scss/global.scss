@@ -1,0 +1,185 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 300px;
+  max-width: 970px;
+  height: 250px;
+
+  border: 1px solid black;
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background: url('../assets/img/back.jpg') 20% 10% no-repeat;
+  background-size: cover;
+}
+
+.gray-screen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: #ebebeb;
+}
+
+.panel {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  // width: 300px;
+  width: 100%;
+  height: 140px;
+
+  background-color: #fff;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.lamoda {
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  width: 100%;
+  height: 15px;
+
+  background: url('../assets/img/lamoda.png') 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.logo {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 48px;
+  height: 30px;
+
+  background: url('../assets/img/logo.png') 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.jacket {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+  margin: auto;
+  width: 63px;
+  height: 148px;
+
+  background: url('../assets/img/jacket.png') 50% 50% no-repeat;
+  background-size: contain;
+
+  opacity: 0;
+}
+
+.palto {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 70px;
+  margin: auto;
+  width: 182px;
+  height: 15px;
+
+  background: url('../assets/img/palto.png') 50% 50% no-repeat;
+  background-size: contain;
+  opacity: 0;
+}
+
+.isoo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 57px;
+  margin: auto;
+  width: 182px;
+  height: 15px;
+
+  background: url('../assets/img/isoo.png') 50% 50% no-repeat;
+  background-size: contain;
+  opacity: 0;
+}
+
+.price {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  margin: auto;
+  width: 182px;
+  height: 15px;
+
+  background: url('../assets/img/price.png') 50% 50% no-repeat;
+  background-size: contain;
+  opacity: 0;
+}
+
+.techno {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 68px;
+  margin: auto;
+  width: 182px;
+  height: 15px;
+
+  background: url('../assets/img/techno.png') 50% 50% no-repeat;
+  background-size: contain;
+  opacity: 0;
+}
+
+.aws {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  margin: auto;
+  width: 103px;
+  height: 30px;
+
+  background: url('../assets/img/aws.png') 50% 50% no-repeat;
+  background-size: contain;
+  opacity: 0;
+}
+
+.membr {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 68px;
+  margin: auto;
+  width: 182px;
+  height: 15px;
+
+  background: url('../assets/img/membr.png') 50% 50% no-repeat;
+  background-size: contain;
+  opacity: 0;
+}
+
+.c8050 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 22px;
+  margin: auto;
+  width: 41px;
+  height: 44px;
+
+  background: url('../assets/img/8050.png') 50% 50% no-repeat;
+  background-size: contain;
+  opacity: 0;
+}
